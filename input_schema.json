@@ -1,0 +1,24 @@
+{
+    "title": "Configuração do Caçador de Leads Locais",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "search": {
+            "title": "Termo de Busca (Localização)",
+            "type": "string",
+            "description": "Ex: Pizzarias em São Paulo, SP; Dentistas em Praia Grande. Seja específico para melhores resultados.",
+            "editor": "textfield",
+            "prefill": "Pizzarias em São Paulo, SP"
+        },
+        "max_items": {
+            "title": "Número Máximo de Leads",
+            "type": "integer",
+            "description": "Defina o limite de empresas que o robô deve extrair (Limite: 1000).",
+            "editor": "number",
+            "prefill": 50,
+            "minimum": 1,
+            "maximum": 1000
+        }
+    },
+    "required": ["search"]
+}
